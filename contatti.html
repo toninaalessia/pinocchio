@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+        <!-- metadati DC -->
+    <meta name="DC.Title" content="Pinocchio">
+    <meta name="DC.Creator" content="Tonina Alessia Basso">
+    <meta name="DC.Subject" content="Pinocchio di Carlo Collodi">
+    <meta name="DC.Description" content="Realizzazioni teatrali, visive e audiovisive di Pinocchio, con informazioni su reperibilità delle opere e autori">
+    <meta name="DC.Publisher" content="Università degli studi di Bologna">
+    <meta name="DC.Date" content="2023">
+    <meta name="DC.Type" content="Sito web">
+    <meta name="DC.Format" content="HTML/CSS/JS">
+    <meta name="DC.Language" content="it">
+    <meta name="DC.Rights" content="Creative Commons">
+    <!-- Titolo del sito -->
+    <title>Pinocchio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="asset/style/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+
+<body>
+
+<!-- barra di navigazione -->
+
+<div class="topnav" style="position:fixed;">
+    <div style="display: flex">
+        <a href="index.html" title="Link alla pagina principale Home">Home</a>
+        <!--     DROPDOWN W3SCHOOL -->
+        <div class="dropdown">
+            <button class="dropbtn">Catalogo</button>
+            <div class="dropdown-content">
+                <a href="catalogo.html">Teatro</a>
+                <a href="catalogo.html">Arte visiva</a>
+                <a href="catalogo.html">Filmografia</a>
+            </div>
+        </div>
+        <a href="contatti.html" class="active" title="Link ai contatti"> Contatti</a>
+    </div>
+    <form class="searchBar">
+        <input type="text" placeholder="Cerca..." name="search2"/>
+        <button class="bg-blue" type="submit"><i class="fa fa-search"></i></button>
+    </form>
+</div>
+<!-- header testata pagina-->
+<div class="header">
+    <h1>Contatti</h1>
+    <p class="p1">Ci troviamo a Bologna!</p>
+</div>
+<div class="rowP" style="margin-left: 0;align-items: flex-start;background: #fafcb0;">
+    <div id="map">
+    </div>
+    <div style="gap:20px;display: flex;flex-direction: column;">
+        <!--Contatti utili, fake indirizzi-->
+        <p class="p1" style="text-align: center;margin-left: 20px;"> Informazioni</p>
+        <div class="rowP">
+            <p class="p3">Email:</p>
+            <p class="p4">toninaxxxxxxx.xxxx@studio.unibo.it</p>
+        </div>
+        <div class="rowP">
+            <p class="p3">Via:</p>
+            <p class="p4">Zamboni 32, Bologna</p>
+        </div>
+        <div class="rowP">
+            <p class="p3">Numero di telefono:</p>
+            <p class="p4">+39 051 xxxxxx</p>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+
+    <p1>&copy; Copyright Tonina Alessia Basso, 2023 - Progetto per il corso di <a
+            href="https://www.unibo.it/it/didattica/insegnamenti/insegnamento/2022/423307" target="_blank"
+            title="Apre il sito del corso di studio dell'Università di Bologna"><em>Digital Humanities e Patrimonio
+        Culturale</em></a> dell'Università di Bologna
+    </p1>
+</footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+<script>
+    var map = L.map('map').setView([44.49698, 11.352273], 13);
+
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+    }).addTo(map);
+
+     L.marker([44.49698, 11.352273]).addTo(map);
+</script>
+
+</body>
+
+</html>

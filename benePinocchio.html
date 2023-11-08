@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <!-- metadati DC -->
+    <meta name="DC.Title" content="Pinocchio">
+    <meta name="DC.Creator" content="Tonina Alessia Basso">
+    <meta name="DC.Subject" content="Pinocchio di Carlo Collodi">
+    <meta name="DC.Description" content="Realizzazioni teatrali, visive e audiovisive di Pinocchio, con informazioni su reperibilità delle opere e autori">
+    <meta name="DC.Publisher" content="Università degli studi di Bologna">
+    <meta name="DC.Date" content="2023">
+    <meta name="DC.Type" content="Sito web">
+    <meta name="DC.Format" content="HTML/CSS/JS">
+    <meta name="DC.Language" content="it">
+    <meta name="DC.Rights" content="Creative Commons">
+    <!-- Titolo del sito -->
+    <title>Pinocchio - Baliani</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="asset/style/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+
+<body>
+
+<!-- barra di navigazione -->
+
+<div class="topnav" style="position:fixed;">
+    <div style="display: flex">
+        <a href="index.html" title="Link alla pagina principale Home">Home</a>
+        <!--     DROPDOWN W3SCHOOL -->
+        <div class="dropdown">
+            <button class="dropbtn">Catalogo</button>
+            <div class="dropdown-content">
+                <a href="catalogo.html">Teatro</a>
+                <a href="catalogo.html">Arte visiva</a>
+                <a href="catalogo.html">Filmografia</a>
+            </div>
+        </div>
+        <a href="contatti.html"title="Link ai contatti"> Contatti</a>
+    </div>
+
+
+    <form class="searchBar">
+        <input type="text" placeholder="Cerca..." name="search2"/>
+        <button class="bg-blue" type="submit"><i class="fa fa-search"></i></button>
+    </form>
+</div>
+
+<!-- header testata pagina-->
+<div class="header">
+    <h1>Pinocchio Baliani</h1>
+</div>
+
+<!-- contenuto catalogo -->
+<div class="contentSidebarContainer">
+    <!-- barra di navigazione verticale -->
+    <div>
+        <ul class="breadcrumb">
+            <li>
+                <a href="index.html" title="Vai alla home" style="padding:0;">Home</a></li>
+            <li><a href="catalogo.html" title="Vai alla home" style="padding:0;">Catalogo</a></li>
+            <li>Pinocchio Baliani</li>
+        </ul>
+        <div class="filterContainer">
+            <p class="p2" style="margin-left: 20px"> Cose utili</p>
+        </div>
+        <div class="topnav sidebar" style="gap:10px;padding:10px">
+            <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" class="buttonA fullWidth"
+               title="Link alla lincenza"> <img alt="Creative Commons License"
+                                                style="border-width:0; width: 60px; margin-right: 10px"
+                                                src="asset/img/copiright.png">Licenza</a>
+            <a class="buttonA fullWidth" href="" title="Condividi dove vuoi">Condividi</a>
+            <a class="buttonA fullWidth" target="_blank" href="./asset/xml/xmlDC.xml" title="Link al file XML/DC"> XML/DC</a>
+            <a class="buttonA fullWidth" href="" title="Link al file XML/TEI"> XML/TEI</a>
+        </div>
+    </div>
+
+    <div class="cardContainerDetail" style="flex-direction: column">
+        <p class="p1" style="margin-left: 20px">Pinocchio Nero di Marco Baliani</p>
+        <img src="asset/img/Pinocchio.jpg" alt="pinocchio" style="height: 400px; object-fit: contain"/>
+        <div class="cardContainerText">
+            <p class="p1" style="margin-left: 20px">Metadati</p>
+            <div class="rowP">
+                <p class="p3">Titolo:</p>
+                <p class="p4">Pinocchio Nero</p>
+            </div>
+            <div class="rowP">
+                <p class="p3">Regista:</p>
+                <p class="p4">Marco Baliani</p>
+            </div>
+            <div class="rowP">
+                <p class="p3">Data: </p>
+                <p class="p4">2006</p>
+            </div>
+            <div class="rowP">
+                <p class="p3">Nazione:</p>
+                <p class="p4">Italia</p>
+            </div>
+            <div class="rowP">
+                <p class="p3">Lingua:</p>
+                <p class="p4">Kswaili / Italiano</p>
+            </div>
+            <div class="rowP">
+                <p class="p3">Durata:</p>
+                <p class="p4">108 minuti</p>
+            </div>
+            <div class="rowP">
+                <p class="p3">Tipo di oggetto: </p>
+                <p class="p4">spettacolo teatrale</p>
+            </div>
+
+            <div class="rowP">
+                <p class="p3">Codice identificativo</p>
+                <p class="p4">PNCC001</p>
+            </div>
+
+        </div>
+        <div class="cardContainerText centered" >
+            <p class="p1" style="margin-left: 20px">Descrizione</p>
+            <p > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <iframe width="90%" height="315"
+
+                    src="https://www.youtube.com/embed/UREMH274pmQ?si=qobukKWnZEq4vomX"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+        </div>
+    </div>
+
+</div>
+<footer>
+
+    <p1>&copy; Copyright Tonina Alessia Basso, 2023 - Progetto per il corso di <a
+            href="https://www.unibo.it/it/didattica/insegnamenti/insegnamento/2022/423307" target="_blank"
+            title="Apre il sito del corso di studio dell'Università di Bologna"><em>Digital Humanities e Patrimonio
+        Culturale</em></a> dell'Università di Bologna
+    </p1>
+</footer>
+
+
+</body>
+
+</html>
