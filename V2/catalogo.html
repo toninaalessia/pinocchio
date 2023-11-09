@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+     <meta charset="utf-8">
+        <!-- metadati DC -->
+    <meta name="DC.Title" content="Pinocchio">
+    <meta name="DC.Creator" content="Tonina Alessia Basso">
+    <meta name="DC.Subject" content="Pinocchio di Carlo Collodi">
+    <meta name="DC.Description" content="Realizzazioni teatrali, visive e audiovisive di Pinocchio, con informazioni su reperibilità delle opere e autori">
+    <meta name="DC.Publisher" content="Università degli studi di Bologna">
+    <meta name="DC.Date" content="2023">
+    <meta name="DC.Type" content="Sito web">
+    <meta name="DC.Format" content="HTML/CSS/JS">
+    <meta name="DC.Language" content="it">
+    <meta name="DC.Rights" content="Creative Commons">
+    <!-- Titolo del sito -->
+    <title>Pinocchio - Catalogo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="asset/style/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+
+<body>
+
+<!-- barra di navigazione -->
+
+<div class="topnav" style="position:fixed;">
+    <div style="display: flex">
+        <a href="index.html" title="Link alla pagina principale Home">Home</a>
+        <!--     DROPDOWN W3SCHOOL -->
+        <div class="dropdown">
+            <button class="dropbtn active">Catalogo</button>
+            <div class="dropdown-content">
+                <a href="catalogo.html" title="Link alla sezione di teatro">Teatro</a>
+                <a href="catalogo.html" title="Link alla sezione di arte visiva">Arte visiva</a>
+                <a href="catalogo.html" title="Link alla sezione di filmografia">Filmografia</a>
+            </div>
+        </div>
+        <a href="contatti.html"title="Link ai contatti"> Contatti</a>
+    </div>
+
+
+    <form class="searchBar">
+        <input type="text" placeholder="Cerca..." name="search2"/>
+        <button class="bg-blue" type="submit"><i class="fa fa-search"></i></button>
+    </form>
+</div>
+
+<!-- header testata pagina-->
+<div class="header">
+    <h1>Catalogo</h1>
+</div>
+
+<!-- contenuto catalogo -->
+<div class="contentSidebarContainer">
+    <!-- barra di navigazione verticale -->
+    <div>
+        <ul class="breadcrumb">
+            <li>
+                <a href="index.html" title="Vai alla home" style="padding:0;">Home</a></li>
+            <li>Catalogo</li>
+        </ul>
+        <div class="filterContainer">
+            <p class="p2" style="margin-left: 20px"> Filtra la lista</p>
+        </div>
+        <!--     VERTICAL TAB HOMEMADE / W3SCHOOL -->
+        <div class="topnav sidebar">
+            <button onclick="toggle('teatro','baliani')" id="teatro" href="index.html"
+                    class="buttonNoHover active"
+                    title="Link alla sezione teatro">Teatro
+            </button>
+            <button onclick="toggle('arteVisiva','toccafondo')" class="buttonNoHover" id="arteVisiva"
+                    href="catalogo.html" title="Link alla sezione di arte visiva">Arte visiva
+            </button>
+            <button onclick="toggle('filmografia','guillermo')"
+
+                    class="buttonNoHover" id=filmografia href=""
+                    title="Link alla sezione di filmografia"> Filmografia
+            </button>
+        </div>
+    </div>
+    <div class="contentContainer">
+        <p class="p2"> Riordina la lista</p>
+        <div class="buttonContainer">
+            <button class="button" title="Metti in ordine alfabetico">Ordine Alfabetico</button>
+            <button class="button" title="Metti in ordine cronologico">Ordine Cronologico</button>
+        </div>
+
+        <div class="cardContainer">
+            <div class="card" id="baliani">
+                <img src="asset/img/Pinocchio.jpg" alt="pinocchio"/>
+                <div class="metadati">
+                    <div>
+                        <p class="p2"> Pinocchio Nero</p>
+                        <p class="p2"> di Marco Baliani</p>
+                        <p class="p2"> <i>Spettacolo teatrale</i></p>
+                    </div>
+                    <a href="benePinocchio.html" class="buttonA" style="width: 100%;"
+                       title="Vai ai metadati">Tutti i
+                        metadati
+                    </a>
+                </div>
+            </div>
+
+            <div class="card" id="toccafondo" style="display: none">
+                <img src="asset/img/toccafondo.jpg" alt="pinocchio"/>
+                <div class="metadati">
+                    <div>
+                        <p class="p2"> 25 tavole di Pinocchio</p>
+                        <p class="p2"> di Gianluigi Toccafondo</p>
+                        <p class="p2"> <i>Arte Visiva</i></p>
+                    </div>
+                    <a
+                            onclick=""
+                            class="buttonA" style="width: 100%;" title="Metti in ordine cronologico">Tutti i
+                        metadati
+                    </a>
+                </div>
+            </div>
+
+            <div class="card" id="guillermo" style="display: none;">
+                <img src="asset/img/guillermo.jpg" alt="pinocchio"/>
+                <div class="metadati">
+                    <div>
+                        <p class="p2"> Pinocchio</p>
+                        <p class="p2"> di Guillermo del Toro</p>
+                        <p class="p2"> <i>Filmografia</i></p>
+                    </div>
+                    <a
+                            onclick=""
+                            class="buttonA" style="width: 100%;" title="Metti in ordine cronologico">Tutti i
+                        metadati
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<footer>
+
+    <p1>&copy; Copyright Tonina Alessia Basso, 2023 - Progetto per il corso di <a
+            href="https://www.unibo.it/it/didattica/insegnamenti/insegnamento/2022/423307" target="_blank"
+            title="Apre il sito del corso di studio dell'Università di Bologna"><em>Digital Humanities e Patrimonio
+        Culturale</em></a> dell'Università di Bologna
+    </p1>
+</footer>
+
+<script>
+
+    function toggle(id) {
+        let elemTeatro = document.getElementById("teatro");
+
+        let elemArteVisiva = document.getElementById("arteVisiva");
+
+        let elemFilmografia = document.getElementById("filmografia");
+
+        let cardElemBaliani = document.getElementById("baliani")
+
+        let cardElemToccafondo = document.getElementById("toccafondo")
+
+        let cardElemGuillermo = document.getElementById("guillermo")
+        switch (id) {
+            case "teatro":
+                elemTeatro.classList.add("active")
+                cardElemBaliani.style.display = "flex"
+
+                elemArteVisiva.classList.remove("active")
+                cardElemToccafondo.style.display = "none"
+
+                elemFilmografia.classList.remove("active")
+                cardElemGuillermo.style.display = "none"
+                break
+            case "arteVisiva":
+                elemArteVisiva.classList.add("active")
+                cardElemToccafondo.style.display = "flex"
+
+                elemTeatro.classList.remove("active")
+                cardElemBaliani.style.display = "none"
+
+                elemFilmografia.classList.remove("active")
+                cardElemGuillermo.style.display = "none"
+                break
+            case "filmografia":
+                elemFilmografia.classList.add("active")
+                cardElemGuillermo.style.display = "flex"
+
+                elemTeatro.classList.remove("active")
+                cardElemBaliani.style.display = "none"
+
+                elemArteVisiva.classList.remove("active")
+                cardElemToccafondo.style.display = "none"
+
+                break
+
+        }
+
+
+    }
+
+</script>
+</body>
+
+</html>
