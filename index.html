@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>Pinocchio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="DC.Title" content="Pinocchio">
+    <meta name="DC.Creator" content="Tonina Alessia Basso">
+    <meta name="DC.Subject" content="Pinocchio di Carlo Collodi">
+    <meta name="DC.Description" content="Realizzazioni teatrali, visive e audiovisive di Pinocchio, con informazioni su reperibilità delle opere e autori">
+    <meta name="DC.Publisher" content="Università degli studi di Bologna">
+    <meta name="DC.Date" content="2023">
+    <meta name="DC.Type" content="Sito web">
+    <meta name="DC.Format" content="HTML/CSS/JS">
+    <meta name="DC.Language" content="it">
+    <meta name="DC.Rights" content="Creative Commons">
+    <link rel="stylesheet" type="text/css" href="asset/style/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+</head>
+
+<body>
+
+<!-- TOP NAVIGATION BAR  W3SCHOOL-->
+
+<div class="topnav" style="position: fixed">
+    <div style="display: flex">
+        <a href="index.html" class="active" title="Link alla pagina principale Home">Home</a>
+        <!--     DROPDOWN W3SCHOOL -->
+        <div class="dropdown">
+            <button class="dropbtn">Catalogo</button>
+            <div class="dropdown-content">
+                <a href="catalogo.html">Teatro</a>
+                <a href="catalogo.html">Arte visiva</a>
+                <a href="catalogo.html">Filmografia</a>
+            </div>
+        </div>
+        <a href="contatti.html" title="Link ai contatti"> Contatti</a>
+    </div>
+    <form class="searchBar">
+        <input type="text" placeholder="Cerca..." name="search2"/>
+        <button class="bg-blue" type="submit"><i class="fa fa-search"></i></button>
+    </form>
+</div>
+<!-- header testata pagina-->
+<div class="header">
+    <h1>Pinocchio</h1>
+    <p class="p1"> Teatro, Filmografia e Arte Visiva</p>
+</div>
+
+
+<!--full-width immagini-->
+<!--     SLIDESHOW W3SCHOOL -->
+<div class="slideshow-container">
+
+
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+
+        <a href="benePinocchio.html">
+            <img title="Link alla carta  di Pinocchio Nero" src="asset/img/Pinocchio.jpg " style="width:100%">
+        </a>
+
+        <div class="text">Pinocchio Nero, Marco Baliani (2004)</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <a href="toccafondoPinocchio.html">
+            <img title="link alla carta di Pinocchio Toccafondo" href="toccafondoPinocchio.html" src="asset/img/toccafondo.jpg"
+                 style="width:100%">
+        </a>
+        <div class="text">Pinocchio, Gianluigi Toccafondo (2011)</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <a href="catalogo.html">
+            <img title="link alla sezione Filmografia" href="deltoroPinocchio" src="asset/img/guillermo.jpg"
+                 style="width:100%">
+        </a>
+        <div class="text">Pinocchio, Guillermo del Toro (2022)</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+
+<!-- Prima colonna -->
+<div class="row bg-gray" id="scopri-di-piu">
+    <div class="column">
+        <h2>Progetto</h2>
+        <p>
+            <b>Pinocchio</b> è un progetto per il corso di <a
+                href="https://www.unibo.it/it/didattica/insegnamenti/insegnamento/2022/423307"> Digital
+            Humanities </a> (2022/2023) dell'Università di Bologna.
+            Gli obiettivi principali del progetto sono la catalogazione delle diverse realizzazioni e rifacimenti
+            dell'opera
+            di Carlo Collodi Pinocchio. Il risultato è un catalogo che prende in considerazione immagini, opere teatrali
+            e
+            pellicole legate all'immaginario del mondo di Pinocchio.
+        </p>
+    </div>
+</div>
+
+<!--   ACCORDION W3SCHOOL -->
+<div class="row bg-pink">
+    <div class="column">
+        <h2 class="txt-light">Nel Paese dei Balocchi</h2>
+        <!-- accordion -->
+
+        <!-- teatro -->
+        <button class="accordion"><b>Teatro</b></button>
+        <div class="panel">
+            <p>
+                All'interno di questa sezione è possibile trovare i vari rifacimenti teatrali, con link alle locandine,
+                alcune
+                immagini, video (quando disponibile) delle realizzazioni di Pinocchio come rappresentazione teatrale.
+                Non
+                sempre si tratta di rifacimenti fedeli al testo di Collodi.
+            </p>
+            <a href="catalogo.html" class="button buttonA" title="Vai alle opere">Vai!</a>
+        </div>
+
+        <!-- pellicole -->
+        <button class="accordion"><b>Arte Visiva</b></button>
+        <div class="panel">
+            <p>
+                Se la filmmografia e le opere teatrali sono tra le più conosciute tra il grande pubblico, rimane più
+                defilata
+                la quantità di opere visive legate al burattino, che permettono di capire in che modo l'immaginario di
+                Pinocchio si configuri nella cultura moderna.
+            </p>
+            <a href="catalogo.html" class="button buttonA" title="Vai alle opere">Vai!</a>
+        </div>
+
+        <!-- arte visiva -->
+        <button class="accordion"><b>Filmografia</b></button>
+        <div class="panel">
+            <p>
+
+                Famosissimo il film del 2002 diretto e interpretato da Roberto Benigni, così come il film di animazione
+                prodotto dalla Disney (1940) e il recente stop-motion di Guillermo Del Toro (2022). Si tratta solo della
+                punta
+                dell'iceberg della filmografia legata a Pinocchio.
+            </p>
+            <a href="catalogo.html" class="button buttonA" title="Vai alle opere">Vai!</a>
+        </div>
+
+    </div>
+
+    <footer>
+
+        <p1>&copy; Copyright Tonina Alessia Basso, 2023 - Progetto per il corso di <a
+                href="https://www.unibo.it/it/didattica/insegnamenti/insegnamento/2022/423307" target="_blank"
+                title="Apre il sito del corso di studio dell'Università di Bologna"><em>Digital Humanities e Patrimonio
+            Culturale</em></a> dell'Università di Bologna
+        </p1>
+    </footer>
+
+
+    <!-- Javascript per slideshow -->
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+
+    <!-- javascript per i bottoni delle varie sezioni -->
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "flex") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "flex";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
